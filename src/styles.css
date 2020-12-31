@@ -1,0 +1,663 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+}
+
+.bck_black {
+  background: #3c3c3c;
+}
+
+.bck_white {
+  background: #ffffff;
+}
+
+.bck_red {
+  background: #ff4800;
+}
+
+.bck_yellow {
+  background: #ffa800;
+}
+
+.iconImage {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.center_wrapper {
+  width: 90rem;
+  margin: 0 auto;
+}
+
+/*====================
+        HEADER
+======================*/
+header {
+  padding: 1rem 0;
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+}
+
+header .header_logo {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+}
+
+.header_logo-img {
+  width: 12rem;
+  margin-right: 1rem;
+}
+
+header .header_logo_venue {
+  font-size: 3rem;
+}
+
+header .header_logo_title {
+  text-transform: uppercase;
+}
+
+/*-------------
+|   | MEDIA QUERIES
+--------------- */
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 44%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 1076px) {
+  html {
+    font-size: 53%;
+  }
+}
+
+/*====================
+        FOOTER
+======================*/
+footer {
+  padding: 50px 0px;
+  text-align: center;
+  font-size: 60px;
+  color: #ffffff;
+  background: red;
+}
+
+footer .footer_copyright {
+  font-size: 18px;
+}
+
+/*====================
+        CARROUSEL
+======================*/
+.carrousel_wrapper {
+  overflow: hidden;
+}
+
+.carrousel_image {
+  background-size: cover !important;
+}
+
+.artist_name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.artist_name .wrapper {
+  height: 12rem;
+  margin: 6px;
+  text-align: center;
+  color: #fff;
+  font-size: 6rem;
+  padding: 2.5rem;
+  text-transform: uppercase;
+}
+
+/*-------------
+|   | MEDIA QUERIES
+--------------- */
+@media screen and (max-width: 360px) {
+  .artist_name .wrapper {
+    height: 12rem;
+    margin: 6px;
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    padding: 2.5rem;
+    text-transform: uppercase;
+    top: 30%;
+  }
+}
+
+@media screen and (max-width: 508px) {
+  .artist_name .wrapper {
+    margin: 6px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (max-width: 641px) {
+  .artist_name .wrapper {
+    height: 12rem;
+    margin: 6px;
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    padding: 2.5rem;
+    text-transform: uppercase;
+  }
+}
+
+/*====================
+        COUNTDOWN
+======================*/
+.countdown_wrapper {
+  position: absolute;
+  bottom: 0px;
+  color: #ffffff;
+}
+
+.countdown_wrapper .countdown_top {
+  background: #ff4800;
+  font-size: 2rem;
+  padding: 1rem;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.countdown_wrapper .countdown_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #d93d00;
+  padding: 1rem 2rem;
+}
+
+.countdown_wrapper .countdown_time {
+  font-size: 4.5rem;
+  border-right: 1px solid #F44336;
+  margin-right: 14px;
+  padding-right: 49px;
+}
+
+.countdown_wrapper .countdown_item:last-child .countdown_time {
+  border: none;
+}
+
+.countdown_wrapper .countdown_tag {
+  text-transform: uppercase;
+  font-size: 20px;
+  padding-left: 7px;
+}
+
+.countdown_wrapper .countdown_time {
+  font-size: 4.5rem;
+  border-right: 1px solid #F44336;
+  margin-right: 14px;
+  padding-right: 49px;
+}
+
+/*-------------
+|   | MEDIA QUERIES
+--------------- */
+@media screen and (max-width: 360px) {
+  .countdown_wrapper .countdown_top {
+    font-size: 1rem;
+  }
+  .countdown_wrapper .countdown_bottom {
+    padding: .2rem .5rem;
+  }
+  .countdown_wrapper .countdown_time {
+    font-size: 1.6rem;
+    border-right: 1px solid #F44336;
+    margin-right: .7rem;
+    padding-right: 49px;
+  }
+  .countdown_wrapper .countdown_tag {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+  }
+}
+
+/*====================
+        VENUE NFO
+======================*/
+.vn_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 170px 0px;
+}
+
+.vn_item {
+  width: 50%;
+  color: #ffffff;
+  text-align: center;
+}
+
+.vn_item .vn_outer {
+  width: 300px;
+  border: 2px solid #828282;
+  margin: auto;
+  padding: 5px;
+}
+
+.vn_item .vn_inner {
+  border: 2px solid #828282;
+  position: relative;
+  padding: 0px 20px;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.vn_item .vn_inner:hover {
+  background: #3e3e3e;
+}
+
+.vn_item .vn_icon_square {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: -54px;
+  left: 100px;
+}
+
+.vn_item .vn_icon {
+  width: 50px;
+  height: 50px;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  position: absolute;
+  top: -30px;
+  left: 124px;
+}
+
+.vn_item .vn_title {
+  font-size: 28px;
+  margin: 90px 0px 20px 0px;
+  border-bottom: 1px solid #5d5d5d;
+  padding-bottom: 10px;
+}
+
+.vn_item .vn_desc {
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 90px;
+}
+
+/*====================
+        HIGHLIGHTS
+======================*/
+.highlight_wrapper h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #2c2c2c;
+  font-size: 52px;
+}
+
+.highlight_wrapper .highlight_description {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 300;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  padding: 30px 0px;
+}
+
+.discount_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 70px 0px;
+}
+
+.discount_wrapper .discount_porcentage {
+  padding-right: 100px;
+}
+
+.discount_wrapper .discount_porcentage span:nth-child(1) {
+  color: #ff4800;
+  font-size: 125px;
+  font-weight: 400;
+  display: block;
+  line-height: 120px;
+}
+
+.discount_wrapper .discount_porcentage span:nth-child(2) {
+  color: #2c2c2c;
+  font-size: 50px;
+  font-weight: 400;
+  display: block;
+}
+
+.discount_wrapper .discount_description h3 {
+  font-size: 34px;
+  font-weight: 100;
+  margin: 0px;
+  color: #2c2c2c;
+}
+
+.discount_wrapper .discount_description p {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/*====================
+        PRICING
+======================*/
+.pricing_section {
+  padding: 70px 0px;
+}
+
+.pricing_section h2 {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 50px;
+  margin: 0;
+}
+
+.pricing_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.pricing_wrapper .pricing_item {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 33%;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.pricing_wrapper .pricing_inner_wrapper {
+  border: 2px solid #ffa800;
+  padding: 50px 20px;
+}
+
+.pricing_inner_wrapper .pricing_title {
+  color: #ffffff;
+  text-align: center;
+  border-bottom: 1px solid #ffa800;
+  padding-bottom: 20px;
+}
+
+.pricing_inner_wrapper .pricing_title span:nth-child(1) {
+  font-size: 50px;
+  display: block;
+}
+
+.pricing_inner_wrapper .pricing_title span:nth-child(2) {
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.pricing_inner_wrapper .pricing_description {
+  color: #b8b8b8;
+  font-weight: 300;
+  font-size: 14px;
+  text-align: center;
+  padding: 20px 0px;
+  min-height: 70px;
+}
+
+.pricing_inner_wrapper .pricing_buttons {
+  text-align: center;
+}
+
+/*====================
+        LOCATION    
+======================*/
+.location_wrapper {
+  position: relative;
+}
+
+.location-map {
+  margin-top: 3rem;
+}
+
+/*====================
+       SERVICES- BY ASHISH BAJRACHARYA    
+======================*/
+.section-services {
+  background: #b8b8b8;
+}
+
+.heading-primary {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #333333;
+}
+
+.services-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.service-item {
+  border-radius: 5px;
+  font-size: 3rem;
+  margin: 5rem;
+  width: 30rem;
+  height: 30rem;
+  padding: 3rem;
+  color: #fff;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.service-item-1 {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(54, 53, 53, 0.6)), to(rgba(54, 53, 53, 0.6))), url("./photos/live-sound.png");
+  background: linear-gradient(to right, rgba(54, 53, 53, 0.6), rgba(54, 53, 53, 0.6)), url("./photos/live-sound.png");
+}
+
+.service-item-2 {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(54, 53, 53, 0.6)), to(rgba(54, 53, 53, 0.6))), url("./photos/ledWall.jpeg");
+  background: linear-gradient(to right, rgba(54, 53, 53, 0.6), rgba(54, 53, 53, 0.6)), url("./photos/ledWall.jpeg");
+}
+
+.service-item-3 {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(54, 53, 53, 0.6)), to(rgba(54, 53, 53, 0.6))), url("./photos/stageLight.jpg");
+  background: linear-gradient(to right, rgba(54, 53, 53, 0.6), rgba(54, 53, 53, 0.6)), url("./photos/stageLight.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.service-item-4 {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(54, 53, 53, 0.6)), to(rgba(54, 53, 53, 0.6))), url("./photos/trussing.jpg");
+  background: linear-gradient(to right, rgba(54, 53, 53, 0.6), rgba(54, 53, 53, 0.6)), url("./photos/trussing.jpg");
+}
+
+.service-item-5 {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(54, 53, 53, 0.6)), to(rgba(54, 53, 53, 0.6))), url("./photos/backline.jpg");
+  background: linear-gradient(to right, rgba(54, 53, 53, 0.6), rgba(54, 53, 53, 0.6)), url("./photos/backline.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.service-item-6 {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(54, 53, 53, 0.6)), to(rgba(54, 53, 53, 0.6))), url("./photos/AVProduction.jpg");
+  background: linear-gradient(to right, rgba(54, 53, 53, 0.6), rgba(54, 53, 53, 0.6)), url("./photos/AVProduction.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.services-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/*====================
+       About- BY ASHISH BAJRACHARYA    
+======================*/
+.section-about {
+  background: #3c3c3c;
+  padding: 2rem;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4rem;
+  margin-top: 2rem;
+  overflow: hidden;
+}
+
+.col-1-of-2 {
+  width: 50rem;
+  padding: 2rem;
+}
+
+.section-slider {
+  background: url("./photos/about-section.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-image {
+  width: 50%;
+  background: url("./photos/about_img_1.jpg");
+  background-position: bottom;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1000px) {
+  .about-image {
+    opacity: 0;
+  }
+}
+
+.heading-secondary-about {
+  color: #b8b8b8;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+}
+
+.paragraph-about {
+  color: #b8b8b8;
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+/*====================
+       GALLERY- BY ASHISH BAJRACHARYA    
+======================*/
+.section-gallery {
+  margin: 0 auto;
+  border: 1px solid yellowgreen;
+  background-size: cover;
+}
+
+.image-gallery-image {
+  background-size: cover;
+  overflow: hidden;
+}
+
+/*====================
+       FOOTER - BY ASHISH BAJRACHARYA    
+======================*/
+.footer_wrapper {
+  background: #3c3c3c;
+  border: 1px solid green;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #fff;
+}
+
+.footer-row div {
+  margin: 3rem;
+}
+
+.footer-row div a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-media {
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+.copyright {
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+.webmaster {
+  font-size: 1rem;
+}
+/*# sourceMappingURL=styles.css.map */
